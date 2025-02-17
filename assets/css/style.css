@@ -497,6 +497,8 @@ margin-top: -20px;
 		gap:30px;
 		@media(max-width:1024px){
 			flex-direction:column;
+			width: 80%;
+			margin-left: 50px;
 		}
 		article {
 			background: linear-gradient(145deg,var(--skin-color) 0%,var(--first-shadow-color) 100%);
@@ -772,7 +774,7 @@ footer{
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media (max-width: 1024px) {
 .home{
-	padding-top: 0px;
+	padding-top: 30px;
 	
 	
 }
@@ -780,10 +782,17 @@ footer{
 font-size: 30px;
 
 }
+.home-info {
+	flex: 1;
+	max-width: 50%;
+	padding: 60px 30px;
+  }
+.hire-me{
+	margin-left: 30px;
 
+}
 .name {
-color:var(--skin-color);  /* Red accent color from the first image */
-font-family: 'Cursive', sans-serif; /* For the stylized name */
+
 font-size: 35px;
 }
 
@@ -792,20 +801,28 @@ font-size: 32px;
 
 }
 .home-img {
-	flex: 0 0 35%;  /* Reduced from 40% to 30% */
-	max-width: 35%;  /* Reduced from 40% to 30% */
-	padding: 10px;   /* Reduced padding */
+	flex: 1;  
+	max-width: 30%;  
+	padding: 10px;   
 	right: -50px;
+	
 
   }
+.project {
+	.work-list {
+		display: flex;
+		flex-direction:column;
+		width: 80%;
+		
+	}}
  
   
 	
 }
-/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 
 
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+/* ----- MEDIA QUERY == 768px / RESPONSIVE ----- */
 
 
 
@@ -895,7 +912,7 @@ font-size: 32px;
 	.home-img img {
 	display:none;
 		}
-		.about-me {
+.about-me {
 			.about-info {
 				flex-direction: column;
 				.right-column {
