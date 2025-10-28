@@ -1,0 +1,19 @@
+:root
+{
+    --skin-color: #14868a; /* Deep Forest Green */
+    --secondary-color: #5efcf1; /* Soft Mint Green */
+    --first-shadow-color: rgb(94,252,241); 
+
+
+}
+[data-theme="color2"] {
+  --skin-color: #263976;
+  --secondary-color: #387780;
+  --first-shadow-color: rgba(0, 162, 255, 0.3);
+}
+
+[data-theme="color3"] {
+  --skin-color: #ff8c00;
+  --secondary-color: #ffb347;
+  --first-shadow-color: rgba(255, 140, 0, 0.3);
+}

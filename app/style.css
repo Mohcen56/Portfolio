@@ -1,0 +1,70 @@
+/* styles.css */
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+
+
+
+
+
+.logos {
+    background-color: var(--bg-black-900);
+    border-radius: 30px;
+    padding: 0px 0px;
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 0%;
+}
+
+@media (max-width: 1440px) {
+    .logos {
+        border-radius: 0px;
+    }
+}
+
+.marquee {
+    width: 100%;
+    height: 128px;
+    overflow: hidden;
+    position: relative;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 40s linear infinite;
+    display: flex;
+    gap: 10px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Hide scrollbar by default */
+.scrollbar-hover::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Show scrollbar on hover */
+.scrollbar-hover:hover::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Style the track and thumb */
+.scrollbar-hover::-webkit-scrollbar-track {
+  background: #232323;
+}
+.scrollbar-hover::-webkit-scrollbar-thumb {
+  background: var(--skin-color);
+  border-radius: 8px;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}

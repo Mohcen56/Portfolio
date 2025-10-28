@@ -1,0 +1,1 @@
+*** Begin Patch`n*** Update File: app/page.tsx`n@@`n-        <nav className="relative flex w-full items-center justify-end gap-4 md:justify-between">`n+        <nav className="relative flex w-full items-center justify-between gap-4">`n*** End Patch`n

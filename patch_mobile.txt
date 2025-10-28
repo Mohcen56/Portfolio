@@ -1,0 +1,1 @@
+*** Begin Patch`n*** Update File: app/page.tsx`n@@`n-        <div className="flex w-full items-center justify-between gap-4 px-4 py-4 sm:px-8">`n+        <div className="flex w-full items-center justify-between gap-4 px-4 py-4 sm:px-8">`n*** End Patch`n

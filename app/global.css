@@ -1,0 +1,383 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+
+
+:root {
+	
+	--bg-black-900: #151515;
+	--bg-black-100: #222222;
+	--bg-black-50: #393939;
+	--text-black-900: #ffffff;
+	--text-black-700: #e9e9e9;
+	--base-100:white;
+	--base-200:wheat;
+}
+body.light {
+  --bg-black-900: #f2f2fc;
+	--bg-black-100: #fdf9ff;
+	--bg-black-50:#888;
+	--text-black-900: #302e4d;
+	--text-black-700: #555;
+  
+
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 20px;
+	
+	background-color: var(--bg-black-900);
+	height: 100%;
+ 
+}
+
+
+
+header {
+	position: fixed;
+	top: 0;  /* This ensures it stays at the top */
+	padding-top: 30px;     /* Changed from negative value */
+	padding-bottom: 40px;  /* Changed from negative value */
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	background-color:var(--bg-black-900);  /* Add this to ensure content doesn't show through */
+	z-index: 1000;          /* This ensures the header stays on top of other content */
+	.logo-holder {
+		display:flex;
+		padding:10px;
+		align-items:center;
+		font-weight:600;
+		color: var(--skin-color);
+			.profile-pic {
+				width: 70px; /* Adjust size */
+				height: 70px;
+				border-radius: 100%; /* Makes it circular */
+				object-fit: cover; /* Ensures the image fits well */
+				border: 3px solid var(--first-shadow-color);
+box-shadow: 0 0 10px var(--first-shadow-color);
+animation: glow 1.5s infinite /* Optional border */
+			}
+			
+		}
+		.logo-text {
+			flex:1;
+		}
+	}
+
+.glow-text {
+	text-decoration: none;
+	display:inline-block;
+	padding:10px 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: var(--text-black-900);
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.glow-text::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	height: 3px;
+	background:  linear-gradient(90deg, var(--secondary-color), var(--skin-color));
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.glow-text:hover {
+	color:var(--skin-color);
+	text-shadow: 0 0 10px var(--first-shadow-color);
+}
+
+.glow-text:hover::after {
+	transform: scaleX(1);
+}
+	
+section {
+ width: 100%;
+  padding: 60px 20px;
+}
+
+	
+	
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+h2 {
+	font-size:64px;
+	line-height:1;
+	margin-bottom:10px;
+	text-align:center;
+	color: var(--text-black-900);
+	
+	small {
+		display:block;
+		font-weight:100;
+		font-size:0.5em;
+		color:var(--twxt-black-900);
+	}
+	@media (max-width:1024px){
+		font-size:48px;
+	}
+}
+
+h3 {
+	font-size:32px;
+	font-weight:600;
+	line-height:1;
+	margin-bottom:20px;
+	color: var(--text-black-900);
+}
+
+/** Home Section **/
+main {
+	padding-bottom: 150px;
+}
+.home {
+padding-top: 50px;
+min-height: 40vh;
+display: flex;
+height: auto;
+padding-bottom: 2%;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+  
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.home-info {
+  flex: 0 0 60%;
+  max-width: 100%;
+  padding: 60px 30px;
+}
+
+.hello {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.name {
+  color:var(--secondary-color);  /* Red accent color from the first image */
+  font-family: "Tangerine", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.my-profession {
+  font-size: 45px;
+  margin: 15px 0;
+}
+
+.typing {
+	font-family: "Cookie", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 60px;
+  color:var(--skin-color) ; /* Red accent color, can be changed using the theme colors */
+}
+
+.home-info p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color:var(--text-black-900);
+  line-height: 1.8;
+
+}
+.card {
+	display: flex;
+	align-items: flex-start; /* let items keep their own height */
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+
+.home-img {
+	flex: 0 0 35%;  /* Reduced from 40% to 30% */
+	max-width: 30%;  /* Reduced from 40% to 30% */
+	padding: 20px;   /* Reduced padding */
+	right: -80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative; /* Added to help with pseudo-element positioning */
+  }
+  
+.home-img img {
+max-width: 100%;  /* Reduced from 100% to 80% */
+height: auto;
+border-radius: 360px;
+
+background: linear-gradient(90deg, var(--first-shadow-color), var(--skin-color)); /* Gradient border effect */
+padding: 10px; /* Space between border and shadow */
+box-shadow: 0 0 40px var(--skin-color), 0 0 80px var(--skin-color); /* Glow effect */
+
+
+
+
+}
+
+
+
+
+
+
+
+/* ----- FOOTER BOX ----- */
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 30px;
+	background:var(--bg-black-100);
+	padding-block: 40px 40px;
+	
+}
+.top-footer p{
+	font-size: 25px;
+	font-weight: 600;
+	color: var(--skin-color);
+}
+.middle-footer .footer-menu{
+	display: flex;
+}
+.footer_menu_list{
+	list-style: none;
+}
+
+.footer_menu_list a{
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	margin-inline: 20px;
+}
+
+.footer-social-icons{
+	display: flex;
+	gap: 30px;   
+	
+	
+}
+.bottom-footer{
+	font-size: 14px;
+	margin-top: 10px;
+	color: var(--text-black-900);
+	a{
+		color: var(--secondary-color);
+	}
+}
+.text-outline-solid {
+	font-weight: 800;
+  -webkit-text-stroke: 2px var(--skin-color);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0); /* forces GPU rendering */
+}
+
+
+/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+@media (max-width: 1024px) {
+.home-img {
+	flex: 1;  
+	max-width: 30%;  
+	padding: 10px;   
+	right: -50px;
+	
+
+  }
+.project {
+	.work-list {
+		display: flex;
+		flex-direction:column;
+		width: 80%;
+		
+	}}
+ 
+  
+	
+}
+
+
+
+/* ----- MEDIA QUERY == 768px / RESPONSIVE ----- */
+
+
+
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 0px;
+		height: 80px;
+		border-bottom: 0px solid rgba(0,0,0,0.1);
+
+	}
+
+	.logo-holder {
+		display: flex;
+		padding-top: 0px;
+		align-items: center;
+		font-weight: 600;
+		color: var(--skin-color);
+	}
+
+	.home {
+		padding-top:30px;
+	}
+	.home-info {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}	
+	.home-img img {
+	display:none;
+		}
+.about-me {
+			.about-info {
+				flex-direction: column;
+				.right-column {
+					flex:1;
+					margin-left: 10px;	
+				}
+			}
+			}
+	.card{
+		width: 100%;
+	}
+
+}

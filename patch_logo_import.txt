@@ -1,0 +1,8 @@
+*** Begin Patch
+*** Update File: app/page.tsx
+@@
+-import Projects from '@/components/projects';
++import Projects from '@/components/projects';
++import Logomarquee from '@/components/logomarquee';
+*** End Patch
+
