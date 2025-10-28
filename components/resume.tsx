@@ -99,14 +99,14 @@ I&apos;m a passionate software engineer and freelancer at an agency that deliver
                 </p>
                 <div className="rounded-xl p-4 sm:p-8 mb-4 sm:mb-8">
                   <div className="grid grid-cols-1 mb-4 sm:mb-8 md:grid-cols-2 gap-y-2 sm:gap-y-4 gap-x-4 sm:gap-x-12 font-mono text-white text-sm sm:text-base">
-                    <div><span className="text-gray-400">Name:</span> Mohcen djeid</div>
-                    <div><span className="text-gray-400">Phone:</span> (+90) 535 523 5640</div>
-                    <div><span className="text-gray-400">Experience:</span> 2+ Years</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Name:</span> Mohcen djeid</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Phone:</span> (+90) 535 523 5640</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Experience:</span> 2+ Years</div>
                     
-                    <div><span className="text-gray-400">Nationality:</span> algerian</div>
-                    <div><span className="text-gray-400">Email:</span> mouhcendjeid@gmail.com</div>
-                    <div><span className="text-gray-400">Freelance:</span> Available</div>
-                    <div><span className="text-gray-400">Languages:</span> English, french,arabic,turkish</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Nationality:</span> algerian</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Email:</span> mouhcendjeid@gmail.com</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Freelance:</span> Available</div>
+                    <div className="text-[var(--text-black-700)]"><span className="text-gray-400">Languages:</span> English, french,arabic,turkish</div>
                   </div>
                 </div>
                 <div className="flex justify-end">

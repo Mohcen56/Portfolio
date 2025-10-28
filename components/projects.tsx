@@ -6,6 +6,17 @@ const projects = [
 	{
 		id: 1,
 		number: "01",
+		title: "Trivia Spirit ",
+		description:
+			"A full-stack, image-based trivia game where players compete across anime, sports, science, and geography categories. Features dynamic question boards by difficulty, perks like Double Points and Reroll, real-time team tracking, and offline play. Built with Django, PostgreSQL, Cloudflare R2, and Next.js + TypeScript for fast, scalable performance with image deduplication, caching, and global subscriptions.",
+		tech: "Next.js, TypeScript, Redux , Django REST Framework, PostgreSQL, Cloudflare R2, Tailwind CSS",
+		image: "/imgs/6.jpeg",
+		live: "#",
+		github: "https://github.com/Mohcen56/Brainigo_backend",
+	},
+	{
+		id: 2,
+		number: "02",
 		title: "Exam Management App",
 		description:
 			"A web application for managing student resit exam declarations, eligibility, grade uploads, and faculty announcements — built with Django.",
@@ -15,8 +26,8 @@ const projects = [
 		github: "https://github.com/Mohcen56/Exam-management-system",
 	},
 	{
-		id: 2,
-		number: "02",
+		id: 3,
+		number: "03",
 		title: "This portfolio",
 		description: "Backend project description goes here.",
 		tech: "react(Next.js), Tailwind CSS,typescript ",
@@ -25,8 +36,8 @@ const projects = [
 		github: "#",
 	},
 	{
-		id: 3,
-		number: "03",
+		id: 4,
+		number: "04",
 		title: "E-commerce Website",
 		description:
 			" created an e-commerce auction platform similar to eBay. Users can post their items for auction, bid on listings, leave comments, and add listings to their watchlist for tracking.",
@@ -36,8 +47,8 @@ const projects = [
 		github: "https://github.com/Mohcen56/commerce",
 	},
 	{
-		id: 4,
-		number: "04",
+		id: 5,
+		number: "05",
 		title: "EMS",
 		description:
 			"Developed an employee management system with role-based access . Admins manage employees, track attendance, and process salaries, while employees can view pay slips, mark attendance, and access personal records. The system includes unique login credentials and a responsive interface for seamless use.",
@@ -46,16 +57,7 @@ const projects = [
 		live: "/report.pdf",
 		github: "#",
 	},
-	{
-		id: 5,
-		number: "05",
-		title: " Project",
-		description: "Backend project description goes here.",
-		tech: "Node.js, Express, MongoDB",
-		image: "/imgs/project2.jpeg",
-		live: "#",
-		github: "#",
-	},
+	
 	// Add more projects here
 ];
 
